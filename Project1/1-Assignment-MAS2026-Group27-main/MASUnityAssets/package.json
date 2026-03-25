@@ -1,0 +1,14 @@
+{
+  "name": "com.mas.assets",
+  "version": "0.0.1",
+  "displayName": "MAS Assets",
+  "description": "Contains the assorted models, scripts and utils used by all MAS course Unity projects.",
+  "documentationUrl": "https://gits-15.sys.kth.se/DD2438/MASUnityAssets",
+  "changelogUrl": "https://gits-15.sys.kth.se/DD2438/MASUnityAssets",
+  "licensesUrl": "https://gits-15.sys.kth.se/DD2438/MASUnityAssets",
+  "author": {
+    "name": "Mart Kartasev",
+    "email": "mart.kartasev@gmail.com",
+    "url": "https://www.kth.se/profile/kartasev?l=en"
+  }
+}

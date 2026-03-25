@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1724806078382898001
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1246155762223703638, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+      propertyPath: m_Name
+      value: CarA1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038562397859845857, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038562397859845857, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038562397859845857, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038562397859845857, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038562397859845857, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038562397859845857, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038562397859845857, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038562397859845857, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038562397859845857, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038562397859845857, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935115946527117010, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1246155762223703638, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1160738765139694941}
+    - targetCorrespondingSourceObject: {fileID: 1246155762223703638, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5418113812076449554}
+  m_SourcePrefab: {fileID: 100100000, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+--- !u!1 &478650316897918215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1246155762223703638, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+  m_PrefabInstance: {fileID: 1724806078382898001}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1160738765139694941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478650316897918215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f37a74d9bc64bfab28e1fee11436aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planningTimeMs: 0
+  controllerTimeMs: 0
+  timeInCollision: 0
+  numberOfCollisions: 0
+  topSpeed: 0
+  distanceTravelled: 0
+  car: {fileID: 9053604567616690068}
+  cellSize: 1
+  thetaBins: 96
+  stepSize: 1.5
+  maxSteerDeg: 25
+  steerSamples: 9
+  allowReverse: 0
+  wheelBase: 2.6
+  maxIters: 15000000
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 256
+  inflateR: 1.3
+  checkY: 0.1
+  probeFwd: 1.2
+  probeSide: 0.7
+  probeScale: 0.9
+  goalTol: 2.5
+  lookStraight: 6
+  lookCorner: 1
+  minLook: 1
+  slowStartDeg: 15
+  slowFullDeg: 80
+  turnLookahead: 30
+  vStraight: 12
+  vTurn: 3
+  minThrottle: 0.3
+  steerClamp: 0.8
+  steerSmooth: 0.15
+  enableRecovery: 1
+  minImpact: 0.5
+  reverseTime: 1.2
+  reverseThrottle: 0.45
+  reverseSteer: 0.65
+  cooldown: 0.6
+--- !u!114 &-5418113812076449554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478650316897918215}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6087a348ea43b4095212edb146dc2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trajectory_filename: Text/Traj10_26_08AM.json
+  recordedInfo:
+    position_array: []
+    rotation_array: []
+    time_array: []
+    file_name: 
+    json_string: 
+  RecordingOn: 1
+  PlaybackOn: 0
+  position_list: []
+  rotation_list: []
+  time_list: []
+  current_index: 0
+--- !u!114 &9053604567616690068 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7659321830340553925, guid: 59697cdff9e8a19489c9afa3022922f6, type: 3}
+  m_PrefabInstance: {fileID: 1724806078382898001}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478650316897918215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea65b38d485c374caa584a03f1de571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
